@@ -11,8 +11,8 @@ def main():
     ligacoes = formar_ligacoes(pontos) #Construcao da lista de ligacoes
     grupos = formar_grupos(ligacoes, len(pontos), k) #Criacao dos grupos
 
-    #escrever_csv_saida(grupos, saida)
-    imprimir_grupos (grupos)
+    escrever_csv_saida(grupos, saida)
+    #imprimir_grupos (grupos) imprimindo no terminal para testes
 
 if __name__ == "__main__":
     main()

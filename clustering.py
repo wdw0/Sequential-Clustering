@@ -22,7 +22,7 @@ def formar_ligacoes(pontos):
         atual = menor
     return ligacoes
 
-def formar_grupos(ligacoes, num_pontos, aux):
+def formar_grupos(ligacoes, num_pontos, k):
     ligacoes.sort(key=lambda x: x[2], reverse = True)
     ligacoes_separadas = ligacoes[k - 1:] #removendo as K-1 maiores ligacoes
     pais = {i: i for i in range(1, num_pontos + 1)}
