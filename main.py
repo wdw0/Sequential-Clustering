@@ -1,6 +1,5 @@
 from io_control import ler_csv_entrada, escrever_csv_saida
 from clustering import formar_ligacoes, formar_grupos
-from utils import imprimir_grupos
 
 def main():
     entrada = input("Informe o nome do arquivo de entrada: ")
@@ -12,7 +11,6 @@ def main():
     grupos = formar_grupos(ligacoes, len(pontos), k) #Criacao dos grupos
 
     escrever_csv_saida(grupos, saida)
-    #imprimir_grupos (grupos) imprimindo no terminal para testes
 
 if __name__ == "__main__":
     main()
