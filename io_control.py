@@ -1,4 +1,3 @@
-#arquivo para controlar o input e output do sistema, lendo e escrevendo os arquivos CSV.
 
 def ler_csv_entrada(nome_arquivo):
     pontos = []
